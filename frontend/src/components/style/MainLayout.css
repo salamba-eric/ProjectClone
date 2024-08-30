@@ -17,16 +17,20 @@
 .main-content {
   display: flex;
   flex: 1;
+  margin-top: 60px;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  left: 0;
+  position: absolute;
+  height: calc(94vh - 60px);
   background-color: #f4f4f4; /* Light gray background */
   padding-top: 0; /* Ensure there's no padding pushing it down */
   margin: 0; /* Ensure no margin that could cause a gap */
   width: 250px; /* Fixed width for sidebar */
+  overflow-y: auto;
 }
 
 .sidebar ul {
@@ -43,7 +47,7 @@
 .sidebar a {
   text-decoration: none;
   color: black;
-  padding: 10px;
+  padding: 5px;
   display: block;
   border-radius: 4px;
 }
@@ -51,11 +55,11 @@
 .sidebar a:hover {
   background-color: #007bff; /* Blue background on hover */
   color: white;
-}
+}  
 
-.add-project-button {
-  margin-top: auto;
-  background-color: #28a745;
+.add-button {
+  margin-top: auto; /* Pushes the button to the bottom */
+  background-color: #28a745; /* Green background */
   color: white;
   border: none;
   padding: 10px;
@@ -63,95 +67,90 @@
   cursor: pointer;
   text-align: center;
 }
-
-.add-project-button:hover {
-  background-color: #218838;
+  
+.add-button:hover {
+  background-color: #218838; /* Darker green on hover */
 }
 
-  
-  .add-button {
-    margin-top: auto; /* Pushes the button to the bottom */
-    background-color: #28a745; /* Green background */
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
-  }
-  
-  .add-button:hover {
-    background-color: #218838; /* Darker green on hover */
-  }
-  
 
-  .content {
-    flex: 1;
-    padding: 20px;
-  }
+.content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 300px; /*Adjust based off of sidebar width*/
+}
 
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #333;
-    padding: 10px;
-    color: white;
-  }
-  
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-  }
-  
-  .navbar-right {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropbtn {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #555;
-  }
-  
-  .dropdown-content {
-    position: absolute;
-    right: 0;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    display: block; /* Controlled by React state */
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
-  
-  /* Ensure that visited links stay black */
-  .dropdown-content a:visited {
-    color: black;
-  }
-  
+.content-no-sidebar{
+  flex: 1;
+  padding: 20px;
+  margin-left: 0;
+}
+
+.navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px;
+  display: flex;
+  color: white;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.navbar-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #555;
+}
+
+.dropdown-content {
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  display: block; /* Controlled by React state */
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Ensure that visited links stay black */
+.dropdown-content a:visited {
+  color: black;
+}

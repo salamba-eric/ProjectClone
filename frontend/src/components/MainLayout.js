@@ -64,7 +64,7 @@ function MainLayout() {
 
       <div className='main-content'>
         {isSidebarOpen && <aside className='sidebar'>{getSidebar()}</aside>}
-        <main className='content'>
+        <main className={isSidebarOpen ? 'content' : 'content-no-sidebar'}>
           <Outlet />
         </main>
       </div>

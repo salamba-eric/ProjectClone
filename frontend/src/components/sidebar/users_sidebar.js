@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Users(){
 
     return(
-        <div>
+        <div className="sidebar">
             <ul>
                 <li><Link to="/dashboard/members/admins">Admins</Link></li>
                 <li><Link to="/dashboard/members/members">Members</Link></li>
@@ -15,7 +15,7 @@ function Users(){
                     Add User
                 </button>
             </div>
-      </div>
+        </div>
     );
 }
 

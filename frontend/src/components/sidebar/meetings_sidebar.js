@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Meetings(){
 
     return(
-        <div>
+        <div className="sidebar">
             <ul>
                 <li><Link to="/dashboard/meetings/upcoming">Upcoming Meetings</Link></li>
                 <li><Link to="/dashboard/meetings/past">Past Meetings</Link></li>
@@ -15,7 +15,7 @@ function Meetings(){
                     Add Meeting
                 </button>
             </div>
-      </div>
+        </div>
     );
 }
 

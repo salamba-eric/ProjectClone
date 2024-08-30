@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 function DashSidebar() {
   return (
+    <div className='sidebar'>
     <ul>
       <li><Link to="/dashboard/projects">Projects</Link></li>
       <li><Link to="/dashboard/members">Members</Link></li>
@@ -11,6 +12,7 @@ function DashSidebar() {
       <li><Link to="/dashboard/calender">Calender</Link></li>
       <li><Link to="/dashboard/about">About</Link></li>
     </ul>
+    </div>
   );
 }
 
