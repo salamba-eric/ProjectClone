@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 function Projects() {
   return (
     <div>
-      <h1>Some of the projects we have</h1>
+      <h1>Most recent project</h1>
       <Outlet /> {/* This will render the nested project routes */}
     </div>
   );
