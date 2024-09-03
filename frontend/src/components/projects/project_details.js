@@ -28,6 +28,7 @@ function ProjectDetails() {
         <div className='project-page'> Project creation form </div>
     );
   }
+  
   return (
     <div className='project-page'>
       <h2>{project.name}</h2>

@@ -41,9 +41,12 @@ function MainLayout() {
     <div className='main-layout'>
 
       <nav className='navbar'>
-        <button onClick={toogleSidebar}>
-          {isSidebarOpen ? 'Hide Sidebar': 'Show Sidebar'}
-        </button>
+        <div className='sidebar-toogle'>
+          <button onClick={toogleSidebar} className='sidebar-toogle-button'>
+            {isSidebarOpen ? 'Hide': 'Show'}
+          </button>
+          <p>Sidebar</p>
+        </div>
 
         <a href='/dashboard'>Dashboard</a>
 

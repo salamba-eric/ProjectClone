@@ -20,7 +20,9 @@ import Incomplete from './components/projects/incomplete';
 import Favorites from './components/projects/favorites';
 import Archives from './components/projects/archived';
 import My_projects  from './components/projects/my_projects';
+import Drafts from './components/projects/drafts';
 import ProjectDetails from './components/projects/project_details';
+import NewProject from './components/projects/new_project';
 
 import Gantt from './components/projects/GanttChart';
 import Card from './components/projects/CardBoard';
@@ -42,6 +44,8 @@ function App() {
           <Route path="favorites" element={<Favorites />} />
           <Route path="archives" element={<Archives />} />
           <Route path="my_projects" element={<My_projects />} />
+          <Route path="drafts" element= {<Drafts /> } />
+          <Route path='new' element={<NewProject />} />
           <Route path=":id" element={<ProjectDetails />}  />
 
           <Route path="gantt-chart" element={<Gantt />} />

@@ -8,6 +8,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   cursor: grab;
   position: absolute;
+  z-index: 0;
 }
 
 .pin textarea {
@@ -32,17 +33,16 @@
   overflow-wrap: break-word; /* Ensure text wraps within the pin */
 }
 
-.edit-button {
-  margin-top: 5px;
+.edit-button, .delete-button{
   background-color: #007bff;
   color: white;
   border: none;
   padding: 5px;
   border-radius: 4px;
   cursor: pointer;
-  width: 90%;
+  width: 30%;
   text-align: center;
-  position: absolute;
+  position: fixed;
   bottom: 10px;
   left: 10px;
 }
@@ -51,17 +51,28 @@
   background-color: #0056b3;
 }
 
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  left: 100px;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
 .add-pin {
   position: relative;
   background-color: #28a745;
   color: white;
   border: none;
   padding: 10px;
-  border-radius: 10%;
+  border-radius: 50%;
   font-size: 20px;
   cursor: pointer;
   z-index: 1000;
 }
+
 
 .add-pin:hover {
   background-color: #218838;
