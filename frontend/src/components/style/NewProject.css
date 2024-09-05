@@ -29,7 +29,7 @@
     border-radius: 4px;
   }
   
-  button {
+  .project-buttons {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -40,7 +40,7 @@
     font-size: 16px;
   }
   
-  button:hover {
+  .project-buttons:hover {
     background-color: #0056b3;
   }
   

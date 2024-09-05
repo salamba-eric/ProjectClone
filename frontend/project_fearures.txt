@@ -1,0 +1,22 @@
+// Features left to implement
+Individual pages
+    Implement a database model for a project
+        project name
+        project id
+        project viewer clearance
+        project progress
+        project tasks
+        project time-line
+        project members
+        project meetings
+        project pin board
+        project gantt chart
+    
+    Implement a meetings model
+        Meeting id
+        Meeting title
+        Meeting project
+        Meeting details
+
+Access control
+Tasks

@@ -32,3 +32,32 @@
 .card-link:hover {
   text-decoration: none;
 }
+
+.project-page {
+  padding: 20px;
+}
+
+.tasks-container {
+  width: 300px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  padding: 10px;
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.task-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+  height: 50px;
+}
+
+.task-item:hover {
+  background-color: #f0f0f0;
+}

@@ -5,7 +5,8 @@
       "progress": "50%",
       "createdAt": "2024-01-01",
       "leader": "John Doe",
-      "description": "This is a detailed description of Project Alpha."
+      "description": "This is a detailed description of Project Alpha.",
+      "tasks": {}
     },
     {
       "id": "2",
@@ -13,7 +14,8 @@
       "progress": "70%",
       "createdAt": "2024-02-01",
       "leader": "Jane Smith",
-      "description": "This is a detailed description of Project Beta."
+      "description": "This is a detailed description of Project Beta.",
+      "tasks": {}
     },
     
     {
@@ -22,7 +24,8 @@
       "progress": "100%",
       "createdAt": "2024-03-01",
       "leader": "Jackie Malton",
-      "description": "This is a detailed description of Project Gamma."
+      "description": "This is a detailed description of Project Gamma.",
+      "tasks": {}
     },
 
     {
@@ -31,7 +34,8 @@
       "progress": "90%",
       "createdAt": "2024-03-01",
       "leader": "Alice Johnson",
-      "description": "This is a detailed description of Project Gamma."
+      "description": "This is a detailed description of Project Gamma.",
+      "tasks": {}
     }
   ]
   

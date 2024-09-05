@@ -62,7 +62,7 @@ function NewProject() {
             required
           />
         </div>
-        <button type="submit">Create Project</button>
+        <button className='project-buttons' type="submit">Create Project</button>
       </form>
     </div>
   );

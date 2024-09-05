@@ -10,11 +10,9 @@ function Meetings(){
                 <li><Link to="/dashboard/meetings/upcoming">Upcoming Meetings</Link></li>
                 <li><Link to="/dashboard/meetings/past">Past Meetings</Link></li>
             </ul>
-            <div className="add-button">
-                <button className="add-button">
-                    Add Meeting
-                </button>
-            </div>
+            <button className="add-button">
+                Add Meeting
+            </button>
         </div>
     );
 }

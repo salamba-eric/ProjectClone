@@ -10,11 +10,9 @@ function Users(){
                 <li><Link to="/dashboard/members/admins">Admins</Link></li>
                 <li><Link to="/dashboard/members/members">Members</Link></li>
             </ul>
-            <div className="add-button">
-                <button className="add-button">
-                    Add User
-                </button>
-            </div>
+            <button className="add-button">
+                Add User
+            </button>
         </div>
     );
 }
