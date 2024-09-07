@@ -18,5 +18,13 @@ Individual pages
         Meeting project
         Meeting details
 
+    Task model 
+        Task Id
+        Task name
+        Task description
+        Task Completion
+        Task Completed by
+        Task Added by
+
 Access control
 Tasks

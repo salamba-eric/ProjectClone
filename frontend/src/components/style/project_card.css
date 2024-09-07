@@ -24,12 +24,12 @@
     flex-direction: column;
   }
   
-  .project-detail {
+  .project-card-detail {
     margin-bottom: 10px;
     font-size: 1em;
   }
   
-  .project-detail strong {
+  .project-card-detail strong {
     font-weight: bold;
   }
   
@@ -39,9 +39,101 @@
     flex-direction: column;
   }
 
-  .project-page{
-    display: flex;
-    position: relative;
-    left:50px;
-    top: 60px;
-  }
+/* General container for the project page */
+.project-page {
+  max-width: 800px;
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+/* Project name heading */
+.project-name {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  user-select: none;
+  color: #333;
+}
+
+/* Project information (ID, Progress, Leader, etc.) */
+.project-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  user-select: none;
+  margin-bottom: 20px;
+}
+
+/* Each detail section (ID, Progress, Created At, etc.) */
+.project-detail {
+  margin-bottom: 10px;
+  width: 48%; /* Display two items per row */
+}
+
+.project-detail strong {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #333;
+}
+
+/* Progress bar container */
+.progress-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-bar-inner {
+  height: 20px;
+  width: calc(100% * var(--progress)); /* Dynamic width based on progress */
+  background-color: #4caf50;
+  transition: width 0.4s ease;
+}
+
+/* Project description styling */
+.project-description {
+  margin-bottom: 30px;
+}
+
+/* Container for tasks */
+.tasks-container {
+  width: 95%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-height: 300px;
+  overflow-y: auto; /* Scroll if tasks exceed height */
+}
+
+.task-item {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+  height: 50px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.task-item:hover {
+  background-color: #f0f0f0;
+}

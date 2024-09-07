@@ -11,13 +11,13 @@ function ProjectCard({id, name, progress, createdAt, leader}){
                 <span>ID: {id}</span>
             </div>
             <div className="project-card-body">
-                <div className="project-detail">
+                <div className="project-card-detail">
                     <strong>Progress:</strong> {progress}
                 </div>
-                <div className="project-detail">
+                <div className="project-card-detail">
                     <strong>Created At:</strong> {createdAt}
                 </div>
-                <div className="project-detail">
+                <div className="project-card-detail">
                     <strong>Leader:</strong> {leader}
                 </div>
             </div>
